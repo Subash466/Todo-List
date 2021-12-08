@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+body{
+  background-color:rgb(24, 107, 214) ;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.App h1{
+  font-family: 'Russo One', sans-serif;
 }
+.container{
+  background-color: rgb(236, 235, 226);
+  min-width: 320px;
+  min-height: 500px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 6px rgb(27, 27, 27);
+  padding: 1rem;
+}
+.add-list{
+  position: relative;
+}
+.add-list input{
+  width: 250px;
+  height: 30px;
+  margin: 1rem 0;
+  margin-right: 2rem;
+  background-color: rgb(95, 156, 236) ;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 4px;
+}
+.add-list button{
+  background-color: yellow;
+  border-radius: 6px;
+  color: rgb(3, 3, 3);
+  position: absolute;
+  top: 15.5px;
+  right: -2px;
+  height: 36px;
+  cursor: pointer;
+}
+.add-list button:active{
+  transform: translateY(8px);
+}
+.show-list{
+  font-weight: bold;
+  position: relative;
+  padding:10px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.show-list .check{
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top:2px;
+}
+.show-list .material-icons{
+  margin: 0.5rem;
+  position: absolute;
+  top:-2px;
+  background-color: rgb(212, 8, 8);
+  color: white;
+  border-radius: 3px;
+  padding: 5px;
+  cursor: pointer;
+}
+.show-list .material-icons:hover{
+  transform: scale(1.1);
+}
+.show{
+  cursor: pointer;
+  font-size: 1.2rem;
+  background-color: rgb(251, 255, 16);
+  color: black;
+  padding:4px 30px;
+  margin: 2px;
+  border:2px solid rgb(51, 48, 48);
+  border-radius: 5px;
+  box-shadow: 2px 3px gray;
+}
+.completed{
+  text-decoration-line: line-through ;
+  text-decoration-thickness:3px ;
 }
